@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathPuzzle10 - Ishi Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .app-detail {
+            padding: 80px 0;
+        }
+        .app-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .app-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 30%;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .app-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        .app-header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .feature-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        .feature-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #007aff;
+            font-weight: bold;
+        }
+        .screenshots {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px 0;
+        }
+        .screenshot {
+            flex: 0 0 auto;
+            width: 200px;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        .screenshot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .support-section {
+            text-align: center;
+            margin-top: 60px;
+        }
+        .privacy-section {
+            background-color: #f8f8fa;
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html" style="color: white; text-decoration: none;">Ishi Tech</a></h1>
+            <p>Mobile Apps & Games</p>
+        </div>
+    </header>
+
+    <main class="app-detail">
+        <div class="container">
+            <div class="app-header">
+                <img src="images/mathpuzzle10-icon.png" alt="MathPuzzle10 Icon">
+                <h1>MathPuzzle10</h1>
+                <p>10を作るパズル - 脳トレ数学ゲーム</p>
+                <div style="margin-top: 30px;">
+                    <a href="#" class="btn btn-primary">App Storeでダウンロード</a>
+                </div>
+            </div>
+
+            <div class="feature-section">
+                <h2>ゲーム概要</h2>
+                <p>「MathPuzzle10」は、4つの数字と演算子（＋、－、×、÷）を使って10を作る脳トレパズルゲームです。シンプルなルールながら、創造的な思考と数学的センスが求められる、知的なゲームです。</p>
+            </div>
+
+            <div class="feature-section">
+                <h2>遊び方</h2>
+                <ol>
+                    <li>画面に表示される4つの数字を確認</li>
+                    <li>演算子（＋、－、×、÷）と括弧を使って式を作成</li>
+                    <li>計算結果が10になるように工夫</li>
+                    <li>正解すると次の問題へ！どこまで解けるか挑戦！</li>
+                </ol>
+            </div>
+
+            <div class="feature-section">
+                <h2>ゲームの特徴</h2>
+                <ul class="feature-list">
+                    <li>無限に生成される問題 - 飽きることなく楽しめます</li>
+                    <li>ヒント機能 - 難しい問題には解法のヒントを表示</li>
+                    <li>複数の解法 - 一つの問題に様々なアプローチが可能</li>
+                    <li>シンプルで美しいデザイン - 集中して問題に取り組めます</li>
+                    <li>レベルシステム - 解いた問題数に応じて難易度が上昇</li>
+                </ul>
+            </div>
+
+            <div class="feature-section">
+                <h2>こんな方におすすめ</h2>
+                <ul>
+                    <li>脳トレや頭の体操を楽しみたい方</li>
+                    <li>数学が好きな方、得意になりたい方</li>
+                    <li>通勤・通学の隙間時間を有効活用したい方</li>
+                    <li>家族や友達と一緒に楽しみたい方</li>
+                </ul>
+            </div>
+
+            <div class="feature-section">
+                <h2>スクリーンショット</h2>
+                <div class="screenshots">
+                    <div class="screenshot">
+                        <img src="images/mp10-screenshot1.png" alt="ゲームプレイ画面">
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/mp10-screenshot2.png" alt="正解画面">
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/mp10-screenshot3.png" alt="ヒント画面">
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-section">
+                <h2>サポート</h2>
+                <p>ゲームに関するご質問やサポートが必要な場合は、お気軽にお問い合わせください。</p>
+                <p><a href="mailto:support@ishi-tech.com">support@ishi-tech.com</a></p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>プライバシーポリシー</h2>
+                <p>MathPuzzle10は、ユーザーの個人情報を収集しません。</p>
+                <p>ゲーム内で保存されるデータ（進捗状況など）は全てデバイス内にローカル保存され、外部サーバーへの送信は行いません。</p>
+                <p>安心してゲームをお楽しみください。</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ishi Tech. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
