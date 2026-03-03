@@ -1,69 +1,402 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishi Tech - Mobile Apps & Games</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetsu Ishi - Developer & System Engineer</title>
+  <meta name="description" content="Portfolio of Tetsu Ishi — Developer & System Engineer based in Vietnam. Web products, iOS apps, demo sites, and business systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Ishi Tech</h1>
-            <p>Mobile Apps & Games</p>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#hero" class="nav__logo">Tetsu Ishi</a>
+    <div class="nav__links">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#products" class="nav__link">Products</a>
+      <a href="#apps" class="nav__link">Apps</a>
+      <a href="#demos" class="nav__link">Demos</a>
+      <a href="#business" class="nav__link">Business</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#blog" class="nav__link">Blog</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="nav__mobile" id="mobileMenu">
+  <a href="#about" class="nav__link">About</a>
+  <a href="#products" class="nav__link">Products</a>
+  <a href="#apps" class="nav__link">Apps</a>
+  <a href="#demos" class="nav__link">Demos</a>
+  <a href="#business" class="nav__link">Business</a>
+  <a href="#skills" class="nav__link">Skills</a>
+  <a href="#blog" class="nav__link">Blog</a>
+  <a href="#contact" class="nav__link">Contact</a>
+</div>
+
+<!-- Hero -->
+<section class="hero section" id="hero">
+  <div class="container">
+    <h1 class="hero__name fade-in">Tetsu Ishi</h1>
+    <p class="hero__role fade-in">Developer &amp; System Engineer</p>
+    <p class="hero__location fade-in">Based in Vietnam</p>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section section--alt" id="about">
+  <div class="container">
+    <h2 class="section__title fade-in">About</h2>
+    <p class="section__subtitle fade-in">Building practical web tools, mobile apps, and business systems. Focused on solving real problems with clean, efficient solutions.</p>
+    <div class="stats fade-in">
+      <div class="stat">
+        <div class="stat__number">7+</div>
+        <div class="stat__label">Web Products</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">2</div>
+        <div class="stat__label">iOS Apps</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">5</div>
+        <div class="stat__label">Demo Sites</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">3+</div>
+        <div class="stat__label">Business Systems</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Products -->
+<section class="section" id="products">
+  <div class="container">
+    <h2 class="section__title fade-in">Products</h2>
+    <p class="section__subtitle fade-in">Web tools built for everyday use &mdash; free, fast, and privacy-focused.</p>
+    <div class="card-grid fade-in">
+
+      <div class="card">
+        <div class="card__icon">&#128196;</div>
+        <h3 class="card__title">PDF Tools</h3>
+        <p class="card__desc">Free online PDF utilities &mdash; merge, split, compress, and convert PDFs right in the browser. No uploads, no sign-up.</p>
+        <div class="card__tags">
+          <span class="tag">Free</span>
+          <span class="tag">No Sign-up</span>
+          <span class="tag">Privacy-first</span>
         </div>
-    </header>
+        <a href="https://pdftools-free.com" target="_blank" rel="noopener" class="card__link">Visit pdftools-free.com</a>
+      </div>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h2>Creating Fun & Innovative Mobile Experiences</h2>
-                <p>パズルゲームと便利なアプリケーションを開発しています</p>
-            </div>
-        </section>
-
-        <section class="apps">
-            <div class="container">
-                <h2>Our Apps</h2>
-                <div class="app-grid">
-                    <!-- Calculation Card Game -->
-                    <div class="app-card">
-                        <img src="images/calculation-card-game-icon.png" alt="Calculation Card Game" class="app-icon">
-                        <h3>Calculation Card Game</h3>
-                        <p>数字と演算子のカードを組み合わせて目標の数を作る計算パズルゲーム</p>
-                        <div class="app-links">
-                            <a href="calculation-card-game.html" class="btn btn-primary">詳細を見る</a>
-                            <a href="#" class="btn btn-secondary">App Store</a>
-                        </div>
-                    </div>
-
-                    <!-- MathPuzzle10 -->
-                    <div class="app-card">
-                        <img src="images/calc10 icon.png" alt="MathPuzzle10" class="app-icon">
-                        <h3>MathPuzzle10</h3>
-                        <p>4つの数字と演算子を使って10を作る脳トレパズルゲーム</p>
-                        <div class="app-links">
-                            <a href="mathpuzzle10.html" class="btn btn-primary">詳細を見る</a>
-                            <a href="#" class="btn btn-secondary">App Store</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>アプリに関するお問い合わせやサポートが必要な場合は、以下のメールアドレスまでご連絡ください。</p>
-                <p><a href="mailto:support@ishi-tech.com">support@ishi-tech.com</a></p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Ishi Tech. All rights reserved.</p>
+      <div class="card">
+        <div class="card__icon">&#128248;</div>
+        <h3 class="card__title">Image Tools</h3>
+        <p class="card__desc">Free online image utilities &mdash; resize, compress, convert, and edit images in the browser. Runs entirely client-side.</p>
+        <div class="card__tags">
+          <span class="tag">Free</span>
+          <span class="tag">Client-side</span>
+          <span class="tag">Fast</span>
         </div>
-    </footer>
+        <a href="https://imagetools-free.com" target="_blank" rel="noopener" class="card__link">Visit imagetools-free.com</a>
+      </div>
+
+      <div class="card">
+        <div class="card__icon">&#128208;</div>
+        <h3 class="card__title">Perspective Correction</h3>
+        <p class="card__desc">A perspective correction tool available on Gumroad. Fix distorted photos of documents, whiteboards, and more.</p>
+        <div class="card__tags">
+          <span class="tag">Gumroad</span>
+          <span class="tag">Image Processing</span>
+        </div>
+        <a href="https://tishi.gumroad.com" target="_blank" rel="noopener" class="card__link">View on Gumroad</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Apps -->
+<section class="section section--alt" id="apps">
+  <div class="container">
+    <h2 class="section__title fade-in">iOS Apps</h2>
+    <p class="section__subtitle fade-in">Puzzle games for iOS that train your brain and sharpen your math skills.</p>
+    <div class="card-grid card-grid--2col fade-in">
+
+      <div class="card">
+        <div class="app-card">
+          <img src="images/calculation-card-game-icon.png" alt="Calculation Card Game icon" class="app-card__icon">
+          <div class="app-card__body">
+            <h3 class="card__title">Calculation Card Game</h3>
+            <span class="app-card__version">v1.1.1</span>
+            <p class="card__desc">Combine number and operator cards to hit the target number. A fast-paced math puzzle with synthwave visuals and escalating difficulty.</p>
+            <a href="calculation-card-game.html" class="card__link">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="app-card">
+          <img src="images/calc10 icon.png" alt="Calculation 10 icon" class="app-card__icon">
+          <div class="app-card__body">
+            <h3 class="card__title">Calculation 10</h3>
+            <span class="app-card__version">v1.2.0</span>
+            <p class="card__desc">Use four numbers and arithmetic operators to make 10. A classic brain-training puzzle with hints, levels, and infinite problems.</p>
+            <a href="mathpuzzle10.html" class="card__link">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Demos -->
+<section class="section" id="demos">
+  <div class="container">
+    <h2 class="section__title fade-in">Demo Sites</h2>
+    <p class="section__subtitle fade-in">Design and development showcases built for various industries.</p>
+    <div class="card-grid fade-in">
+
+      <div class="card">
+        <div class="card__icon">&#127912;</div>
+        <h3 class="card__title">T.Ishi Portfolio</h3>
+        <p class="card__desc">Personal portfolio demo site showcasing creative web design and modern layout techniques.</p>
+        <div class="card__tags">
+          <span class="tag--outline tag">Portfolio</span>
+          <span class="tag--outline tag">Design</span>
+        </div>
+        <a href="https://poposuke18.github.io/t-ishi-portfolio/" target="_blank" rel="noopener" class="card__link">View demo</a>
+      </div>
+
+      <div class="card">
+        <div class="card__icon">&#127968;</div>
+        <h3 class="card__title">Dep Nha</h3>
+        <p class="card__desc">Interior design studio demo &mdash; clean layout with gallery and service sections for a Vietnamese design firm.</p>
+        <div class="card__tags">
+          <span class="tag--outline tag">Interior Design</span>
+          <span class="tag--outline tag">Vietnamese</span>
+        </div>
+        <a href="https://poposuke18.github.io/dep-nha/" target="_blank" rel="noopener" class="card__link">View demo</a>
+      </div>
+
+      <div class="card">
+        <div class="card__icon">&#128134;</div>
+        <h3 class="card__title">Thien Duong Spa</h3>
+        <p class="card__desc">Spa &amp; wellness demo site with elegant design, booking sections, and service menus.</p>
+        <div class="card__tags">
+          <span class="tag--outline tag">Wellness</span>
+          <span class="tag--outline tag">Vietnamese</span>
+        </div>
+        <a href="https://poposuke18.github.io/thien-duong-spa/" target="_blank" rel="noopener" class="card__link">View demo</a>
+      </div>
+
+      <div class="card">
+        <div class="card__icon">&#128218;</div>
+        <h3 class="card__title">Vietnam Trust Catalog</h3>
+        <p class="card__desc">Product catalog demo for a Vietnamese trade company &mdash; category browsing and product detail pages.</p>
+        <div class="card__tags">
+          <span class="tag--outline tag">E-commerce</span>
+          <span class="tag--outline tag">Catalog</span>
+        </div>
+        <a href="https://poposuke18.github.io/vietnam-trust-catalog/" target="_blank" rel="noopener" class="card__link">View demo</a>
+      </div>
+
+      <div class="card">
+        <div class="card__icon">&#127833;</div>
+        <h3 class="card__title">Sakura Izakaya</h3>
+        <p class="card__desc">Japanese restaurant demo site with menu display, reservation section, and atmosphere gallery.</p>
+        <div class="card__tags">
+          <span class="tag--outline tag">Restaurant</span>
+          <span class="tag--outline tag">Japanese</span>
+        </div>
+        <a href="https://poposuke18.github.io/sakura-izakaya/" target="_blank" rel="noopener" class="card__link">View demo</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Business Systems -->
+<section class="section section--alt" id="business">
+  <div class="container">
+    <h2 class="section__title fade-in">Business Systems</h2>
+    <p class="section__subtitle fade-in">Internal tools and enterprise systems built to streamline operations.</p>
+    <div class="card-grid card-grid--2col fade-in">
+
+      <div class="card">
+        <div class="card__icon">&#128202;</div>
+        <h3 class="card__title">Estimate Management System</h3>
+        <p class="card__desc">Web-based system for creating, managing, and tracking project estimates. Streamlines the quotation workflow with approval flows and PDF export.</p>
+        <div class="card__tags">
+          <span class="tag">Internal Tool</span>
+          <span class="tag">Workflow</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__icon">&#128197;</div>
+        <h3 class="card__title">Meeting Room Booking</h3>
+        <p class="card__desc">Room reservation system with calendar view, conflict detection, and recurring booking support for office environments.</p>
+        <div class="card__tags">
+          <span class="tag">Internal Tool</span>
+          <span class="tag">Scheduling</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__icon">&#9881;</div>
+        <h3 class="card__title">IoT Smart Factory</h3>
+        <p class="card__desc">Dashboard and monitoring system for IoT-connected manufacturing equipment. Real-time data visualization and alert management.</p>
+        <div class="card__tags">
+          <span class="tag">IoT</span>
+          <span class="tag">Manufacturing</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__icon">&#127881;</div>
+        <h3 class="card__title">30th Anniversary Project</h3>
+        <p class="card__desc">Special anniversary project involving event management, digital content, and commemorative site development.</p>
+        <div class="card__tags">
+          <span class="tag">Event</span>
+          <span class="tag">Web</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="section" id="skills">
+  <div class="container">
+    <h2 class="section__title fade-in">Skills</h2>
+    <div class="skills-grid fade-in">
+
+      <div class="skills-group">
+        <h3 class="skills-group__title">Languages &amp; Frameworks</h3>
+        <ul class="skills-group__list">
+          <li class="skills-group__item">HTML / CSS / JavaScript</li>
+          <li class="skills-group__item">TypeScript</li>
+          <li class="skills-group__item">Swift / SwiftUI</li>
+          <li class="skills-group__item">Python</li>
+          <li class="skills-group__item">React / Next.js</li>
+          <li class="skills-group__item">Node.js</li>
+          <li class="skills-group__item">Phaser 3</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3 class="skills-group__title">AI &amp; Tools</h3>
+        <ul class="skills-group__list">
+          <li class="skills-group__item">Claude / ChatGPT</li>
+          <li class="skills-group__item">GitHub Copilot</li>
+          <li class="skills-group__item">Cursor / Claude Code</li>
+          <li class="skills-group__item">Vercel / Netlify</li>
+          <li class="skills-group__item">Git / GitHub</li>
+          <li class="skills-group__item">Figma</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3 class="skills-group__title">Domain Expertise</h3>
+        <ul class="skills-group__list">
+          <li class="skills-group__item">Web Application Development</li>
+          <li class="skills-group__item">iOS App Development</li>
+          <li class="skills-group__item">Business System Design</li>
+          <li class="skills-group__item">IoT / Smart Factory</li>
+          <li class="skills-group__item">UI / UX Design</li>
+          <li class="skills-group__item">Technical Writing (EN/JP)</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Blog -->
+<section class="section section--alt" id="blog">
+  <div class="container">
+    <h2 class="section__title fade-in">Blog &amp; Writing</h2>
+    <p class="section__subtitle fade-in">Technical articles and insights published across multiple platforms.</p>
+    <div class="blog-grid fade-in">
+      <a href="https://qiita.com/tishi_tech" target="_blank" rel="noopener" class="blog-link">Qiita</a>
+      <a href="https://zenn.dev/tishi_tech" target="_blank" rel="noopener" class="blog-link">Zenn</a>
+      <a href="https://note.com/tishi_tech" target="_blank" rel="noopener" class="blog-link">Note</a>
+      <a href="https://dev.to/tishi_tech" target="_blank" rel="noopener" class="blog-link">Dev.to</a>
+      <a href="https://medium.com/@tishi_tech" target="_blank" rel="noopener" class="blog-link">Medium</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact / Footer -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <h2 style="color:#fff;font-size:1.25rem;font-weight:700;margin-bottom:0.5rem;">Get in Touch</h2>
+        <a href="mailto:support@ishi-tech.com" class="footer__link">support@ishi-tech.com</a>
+      </div>
+      <div class="footer__links">
+        <a href="https://linkedin.com/in/tishi-tech" target="_blank" rel="noopener" class="footer__link">LinkedIn</a>
+        <a href="https://github.com/poposuke18" target="_blank" rel="noopener" class="footer__link">GitHub</a>
+        <a href="https://www.upwork.com/freelancers/tishi" target="_blank" rel="noopener" class="footer__link">Upwork</a>
+        <a href="https://x.com/tishi_tech" target="_blank" rel="noopener" class="footer__link">X</a>
+        <a href="https://tishi.gumroad.com" target="_blank" rel="noopener" class="footer__link">Gumroad</a>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2025 Tetsu Ishi. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+// IntersectionObserver for fade-in
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in--visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Nav scroll shadow
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('nav--scrolled', window.scrollY > 10);
+}, { passive: true });
+
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('nav__hamburger--open');
+  mobileMenu.classList.toggle('nav__mobile--open');
+  document.body.style.overflow = mobileMenu.classList.contains('nav__mobile--open') ? 'hidden' : '';
+});
+
+// Close mobile menu on link click
+mobileMenu.querySelectorAll('.nav__link').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('nav__hamburger--open');
+    mobileMenu.classList.remove('nav__mobile--open');
+    document.body.style.overflow = '';
+  });
+});
+</script>
+
 </body>
 </html>

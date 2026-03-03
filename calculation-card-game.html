@@ -1,187 +1,177 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculation Card Game - Ishi Tech</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .app-detail {
-            padding: 80px 0;
-        }
-        .app-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        .app-header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 30%;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-        .app-header h1 {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-        }
-        .app-header p {
-            font-size: 1.2em;
-            color: #666;
-        }
-        .feature-section {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-        }
-        .feature-section h2 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .feature-list {
-            list-style: none;
-            padding: 0;
-        }
-        .feature-list li {
-            padding: 10px 0;
-            padding-left: 30px;
-            position: relative;
-        }
-        .feature-list li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #007aff;
-            font-weight: bold;
-        }
-        .screenshots {
-            display: flex;
-            gap: 20px;
-            overflow-x: auto;
-            padding: 20px 0;
-        }
-        .screenshot {
-            flex: 0 0 auto;
-            width: 200px;
-            height: 400px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-        }
-        .screenshot img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .support-section {
-            text-align: center;
-            margin-top: 60px;
-        }
-        .privacy-section {
-            background-color: #f8f8fa;
-            padding: 40px;
-            border-radius: 20px;
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculation Card Game - Tetsu Ishi</title>
+  <meta name="description" content="Calculation Card Game — a math puzzle game where you combine number and operator cards to hit the target. Available on the App Store.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><a href="index.html" style="color: white; text-decoration: none;">Ishi Tech</a></h1>
-            <p>Mobile Apps & Games</p>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo">Tetsu Ishi</a>
+    <div class="nav__links">
+      <a href="index.html#products" class="nav__link">Products</a>
+      <a href="index.html#apps" class="nav__link">Apps</a>
+      <a href="index.html#demos" class="nav__link">Demos</a>
+      <a href="index.html#contact" class="nav__link">Contact</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav__mobile" id="mobileMenu">
+  <a href="index.html#products" class="nav__link">Products</a>
+  <a href="index.html#apps" class="nav__link">Apps</a>
+  <a href="index.html#demos" class="nav__link">Demos</a>
+  <a href="index.html#contact" class="nav__link">Contact</a>
+</div>
+
+<main class="subpage">
+  <div class="container">
+
+    <!-- App Header -->
+    <div class="subpage__header fade-in">
+      <img src="images/calculation-card-game-icon.png" alt="Calculation Card Game icon" class="subpage__icon">
+      <h1 class="subpage__title">Calculation Card Game</h1>
+      <p class="subpage__subtitle">v1.1.1 &mdash; Math Puzzle for iOS</p>
+      <div style="margin-top:1.5rem;">
+        <a href="#" class="btn btn--primary">Download on the App Store</a>
+      </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="content-card fade-in">
+      <h2>Overview</h2>
+      <p>Calculation Card Game is a math puzzle where you combine number and operator cards (+, -, &times;, &divide;) to hit the target number. Simple rules, but you'll need strategic thinking and quick calculation to master it.</p>
+    </div>
+
+    <!-- How to Play -->
+    <div class="content-card fade-in">
+      <h2>How to Play</h2>
+      <ol>
+        <li>Check the target number displayed at the top of the screen</li>
+        <li>Select numbers and operators from the 16 cards to build an equation</li>
+        <li>Tap the calculate button to check your answer</li>
+        <li>Correct answers advance you to the next round &mdash; solve as many as you can before time runs out!</li>
+      </ol>
+    </div>
+
+    <!-- Features -->
+    <div class="content-card fade-in">
+      <h2>Features</h2>
+      <ul class="feature-check">
+        <li>Progressive difficulty &mdash; target range increases as you solve more problems</li>
+        <li>Shuffle &mdash; stuck? Rearrange the cards and discover new combinations</li>
+        <li>High score tracking &mdash; beat your personal best and watch your skills improve</li>
+        <li>Synthwave visuals &mdash; stylish neon-inspired design</li>
+        <li>Sound effects &amp; BGM &mdash; immersive audio that keeps you in the zone</li>
+      </ul>
+    </div>
+
+    <!-- Difficulty Progression -->
+    <div class="content-card fade-in">
+      <h2>Difficulty Progression</h2>
+      <ul>
+        <li>Problems 1-5: target range 1 &ndash; 20</li>
+        <li>Problems 6-10: target range 20 &ndash; 60</li>
+        <li>Problems 11-15: target range 60 &ndash; 120</li>
+        <li>Problem 16+: target range 1 &ndash; 200</li>
+      </ul>
+    </div>
+
+    <!-- Screenshots -->
+    <div class="content-card fade-in">
+      <h2>Screenshots</h2>
+      <div class="screenshots">
+        <div class="screenshot">
+          <img src="images/Simulator Screenshot - iPhone 16 Pro Max - 2025-07-11 at 19.25.43.png" alt="Game rules screen">
         </div>
-    </header>
-
-    <main class="app-detail">
-        <div class="container">
-            <div class="app-header">
-                <img src="images/calculation-card-game-icon.png" alt="Calculation Card Game Icon">
-                <h1>Calculation Card Game</h1>
-                <p>計算カードゲーム - 頭脳を鍛える数学パズル</p>
-                <div style="margin-top: 30px;">
-                    <a href="#" class="btn btn-primary">App Storeでダウンロード</a>
-                </div>
-            </div>
-
-            <div class="feature-section">
-                <h2>ゲーム概要</h2>
-                <p>「Calculation Card Game」は、数字カードと演算子カード（＋、－、×、÷）を組み合わせて、目標の数字を作り出す計算パズルゲームです。シンプルなルールながら、戦略的思考と素早い計算力が求められる、やりがいのあるゲームです。</p>
-            </div>
-
-            <div class="feature-section">
-                <h2>遊び方</h2>
-                <ol>
-                    <li>画面上部に表示される「目標の数字」を確認</li>
-                    <li>16枚のカードから数字と演算子を選んで式を作成</li>
-                    <li>計算ボタンを押して答え合わせ</li>
-                    <li>正解すると次の問題へ！制限時間内に何問解けるか挑戦！</li>
-                </ol>
-            </div>
-
-            <div class="feature-section">
-                <h2>ゲームの特徴</h2>
-                <ul class="feature-list">
-                    <li>段階的な難易度システム - 問題を解くごとに目標数字の範囲が広がります</li>
-                    <li>シャッフル機能 - 行き詰まったらカードを並び替えて新しい組み合わせを発見</li>
-                    <li>ハイスコア機能 - 自己ベストを更新して、計算力の向上を実感</li>
-                    <li>美しいビジュアル - シンセウェイブ風のスタイリッシュなデザイン</li>
-                    <li>心地よいサウンド - ゲームを盛り上げるBGMと効果音</li>
-                </ul>
-            </div>
-
-            <div class="feature-section">
-                <h2>難易度の進行</h2>
-                <ul>
-                    <li>1-5問目：1〜20の数字</li>
-                    <li>6-10問目：20〜60の数字</li>
-                    <li>11-15問目：60〜120の数字</li>
-                    <li>16問目以降：1〜200の数字</li>
-                </ul>
-            </div>
-
-            <div class="feature-section">
-                <h2>スクリーンショット</h2>
-                <div class="screenshots">
-                    <div class="screenshot">
-                        <img src="images/Simulator Screenshot - iPhone 16 Pro Max - 2025-07-11 at 19.25.43.png" alt="ゲームルール画面">
-                    </div>
-                    <div class="screenshot">
-                        <img src="images/Simulator Screenshot - iPhone 16 Pro Max - 2025-07-11 at 19.25.29.png" alt="ゲームプレイ画面">
-                    </div>
-                    <div class="screenshot">
-                        <img src="images/Simulator Screenshot - iPhone 16 Pro Max - 2025-07-11 at 19.25.17.png" alt="メイン画面">
-                    </div>
-                    <div class="screenshot">
-                        <img src="images/Simulator Screenshot - iPhone 16 Pro Max - 2025-07-11 at 19.25.14.png" alt="タイトル画面">
-                    </div>
-                    <div class="screenshot">
-                        <img src="images/Simulator Screenshot - iPhone 16 Pro Max - 2025-07-11 at 19.25.04.png" alt="スコア画面">
-                    </div>
-                </div>
-            </div>
-
-            <div class="support-section">
-                <h2>サポート</h2>
-                <p>ゲームに関するご質問やサポートが必要な場合は、お気軽にお問い合わせください。</p>
-                <p><a href="mailto:support@ishi-tech.com">support@ishi-tech.com</a></p>
-            </div>
-
-            <div class="privacy-section">
-                <h2>プライバシーポリシー</h2>
-                <p>Calculation Card Gameは、ユーザーの個人情報を収集しません。</p>
-                <p>ゲーム内で保存されるデータ（ハイスコアなど）は全てデバイス内にローカル保存され、外部サーバーへの送信は行いません。</p>
-                <p>安心してゲームをお楽しみください。</p>
-            </div>
+        <div class="screenshot">
+          <img src="images/Simulator Screenshot - iPhone 16 Pro Max - 2025-07-11 at 19.25.29.png" alt="Gameplay screen">
         </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Ishi Tech. All rights reserved.</p>
+        <div class="screenshot">
+          <img src="images/Simulator Screenshot - iPhone 16 Pro Max - 2025-07-11 at 19.25.17.png" alt="Main screen">
         </div>
-    </footer>
+        <div class="screenshot">
+          <img src="images/Simulator Screenshot - iPhone 16 Pro Max - 2025-07-11 at 19.25.14.png" alt="Title screen">
+        </div>
+        <div class="screenshot">
+          <img src="images/Simulator Screenshot - iPhone 16 Pro Max - 2025-07-11 at 19.25.04.png" alt="Score screen">
+        </div>
+      </div>
+    </div>
+
+    <!-- Support -->
+    <div class="support-section fade-in">
+      <h2>Support</h2>
+      <p>Questions or need help? Feel free to reach out.</p>
+      <p><a href="mailto:support@ishi-tech.com">support@ishi-tech.com</a></p>
+    </div>
+
+    <!-- Privacy -->
+    <div class="content-card fade-in" style="background:var(--color-bg-alt);">
+      <h2>Privacy</h2>
+      <p>Calculation Card Game does not collect any personal information. All game data (high scores, etc.) is stored locally on your device and is never transmitted to external servers. Play with confidence.</p>
+      <p><a href="privacy-policy.html">Full Privacy Policy</a></p>
+    </div>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <a href="index.html" class="footer__link">Back to Portfolio</a>
+      <div class="footer__links">
+        <a href="mailto:support@ishi-tech.com" class="footer__link">support@ishi-tech.com</a>
+        <a href="https://github.com/poposuke18" target="_blank" rel="noopener" class="footer__link">GitHub</a>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2025 Tetsu Ishi. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in--visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('nav--scrolled', window.scrollY > 10);
+}, { passive: true });
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('nav__hamburger--open');
+  mobileMenu.classList.toggle('nav__mobile--open');
+  document.body.style.overflow = mobileMenu.classList.contains('nav__mobile--open') ? 'hidden' : '';
+});
+mobileMenu.querySelectorAll('.nav__link').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('nav__hamburger--open');
+    mobileMenu.classList.remove('nav__mobile--open');
+    document.body.style.overflow = '';
+  });
+});
+</script>
+
 </body>
 </html>
